@@ -1,5 +1,5 @@
 let btnstatus = false;
-
+let x=0;
 // console.log(typeof(size));
 
 const container = document.querySelector('#container');
