@@ -1,10 +1,22 @@
-let size =parseInt(prompt("Size")) ;
+let btnstatus = false;
 
 // console.log(typeof(size));
 
 const container = document.querySelector('#container');
 let root = document.documentElement;
 
+
+let size= parseInt(prompt("Size")) ;
+makegrid(size);
+const button = document.querySelector('#reset');
+button.addEventListener('click',()=>{
+    drawStatus=false;
+    divs.forEach(div=> div.className='grid-item');
+    btnstatus = true;
+    console.log(btnstatus);
+    size= parseInt(prompt("Size")) ;
+    makegrid(size);
+})
 
 
 
@@ -37,7 +49,7 @@ if(size>1){
 
 let drawStatus = false;
 console.log(drawStatus);
-container.addEventListener('click', draw)
+container.addEventListener('click', draw);
 let divs=document.querySelectorAll('.grid-item');
 const grids = document.querySelectorAll('.grid-item');
 

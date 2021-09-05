@@ -10,6 +10,7 @@
     width:  500px;
     float: none;
     background-color: blanchedalmond;
+
 }
 
 div {
@@ -20,6 +21,15 @@ div {
     
     
 }
+
+#bottom{
+    background-color: rgb(151, 151, 100);
+    min-height: 15vh;
+    width: 100vw;
+}
+
+
+
 .grid-item{
     border-color: black;
 }
